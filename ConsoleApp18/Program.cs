@@ -40,7 +40,10 @@ namespace ConsoleApp18
         private static void RunConrol()
         {
             while (gameRunning)
-            {   // в цикле читаем нажатую кнопку.
+         
+            {
+                consoleTitle();
+                // в цикле читаем нажатую кнопку.
                 ConsoleKeyInfo key = Console.ReadKey();                
                 if (controlBlock)   // если controlBlock стоит в значении true, то переход к следующей итерации
                     continue;

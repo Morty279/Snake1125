@@ -18,6 +18,7 @@ namespace ConsoleApp18
             // Переключить controlBlock в false - чтобы можно было поменять направление
             // вернуть получившийся массив
             int[] coordinates = new int[2] { snake[0][0], snake[0][1] };
+            graphics.FillEllipse(System.Drawing.Brushes.Green, snake[0][0], snake[0][1], 10, 10);
 
             if (direction==1)
                 coordinates[1] = coordinates[1]-10;
@@ -30,7 +31,6 @@ namespace ConsoleApp18
 
             controlBlock = false;
             return coordinates;
-
         }
     }
 }
